@@ -19,6 +19,11 @@ public class UrlController {
     @Autowired
     private UrlService urlService;
 
+    @GetMapping("/")
+    public String home() {
+        return "Welcome To Url Shortner";
+    }
+
     @PostMapping("/create")
     public ResponseEntity<Url> createUrl(@RequestParam String originalUrl, @RequestParam String expirationTime, HttpServletRequest request) {
         return ResponseEntity.status(HttpStatus.OK).body(urlService.createUrl(originalUrl,expirationTime, request));
