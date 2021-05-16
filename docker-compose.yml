@@ -1,0 +1,15 @@
+version: "3.3"
+
+services:
+  shortenUrl:
+    image: mongo:latest
+    container_name: shortenUrl
+    ports:
+      - 27017:27017
+  urlshortner-spring-boot:
+    image:  urlshortner-spring-boot
+    container_name:  urlshortner-spring-boot
+    ports:
+      - 8080:8080
+    links:
+      - shortenUrl
