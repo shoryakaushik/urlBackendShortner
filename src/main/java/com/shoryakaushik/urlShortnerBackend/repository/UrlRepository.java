@@ -1,6 +1,6 @@
 package com.shoryakaushik.urlShortnerBackend.repository;
 
-import com.shoryakaushik.urlShortnerBackend.dto.Url;
+import com.shoryakaushik.urlShortnerBackend.models.Url;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 

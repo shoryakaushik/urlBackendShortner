@@ -1,4 +1,4 @@
-package com.shoryakaushik.urlShortnerBackend.dto;
+package com.shoryakaushik.urlShortnerBackend.models;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
